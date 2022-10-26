@@ -1,0 +1,41 @@
+:root{ 
+    
+} 
+.logo{ 
+    width: 250px;
+    height: 80px;
+
+} 
+.img-container { 
+    text-align: center;
+    
+    
+}
+.h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+ color: rgb(41, 40, 40);
+} 
+
+#text{ 
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.figcap{ 
+    color: rgba(153, 153, 147, 0.883);
+} 
+#prep{ 
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.featured{
+    text-transform: uppercase;
+    color: brown;
+ } 
+ .tk { 
+    text-transform: uppercase;
+ } 
+ #p{ 
+    color: rgb(44, 105, 99);
+    
+ } 
