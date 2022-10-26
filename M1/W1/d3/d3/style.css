@@ -1,6 +1,4 @@
-:root{ 
-    
-} 
+
 .logo{ 
     width: 250px;
     height: 80px;
@@ -37,5 +35,6 @@
  } 
  #p{ 
     color: rgb(44, 105, 99);
+    background-color: rgba(228, 230, 64, 0.381);
     
  } 
