@@ -1,0 +1,100 @@
+
+
+@font-face{
+font-family: 'font-fa';
+src: url(../fonts/fa-brands-400.ttf) format('truetype');
+src: url(../fonts/fa-regular-400.ttf) format('truetype');
+src: url(../fonts/fa-solid-900.ttf) format('truetype');
+}
+body {
+    background-image: url(../img/sfondo.png);
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+     margin: 0 auto; 
+     
+    }
+
+
+
+ /* INIZIO CSS HEADER*/
+
+  .headerbox { 
+    text-align: center;
+    
+    width: 50%;
+    
+    margin: auto;
+    margin-top: 2%;
+
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+
+
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,107,121,1) 1%, rgba(24,159,201,1) 54%);;
+    box-shadow: 5px 5px 15px black;
+   
+   
+ }
+ 
+ .menu, .menu2 { 
+    font-size: 20px;
+    text-transform: uppercase;
+    color: rgb(246, 246, 246);
+    
+ }
+ .menu2{
+   padding-bottom: 5%;
+    
+ }
+
+ .menu{
+    padding: 5%;
+
+ }
+ /*FINE CSS HEADER*/
+
+ /* CSS MAIN */
+
+ .mainbox{
+    background-color: white;
+
+    
+    
+    width:50%;
+    
+    margin: auto;
+    
+    margin-top: 2% ;
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+     
+    box-shadow: 5px 5px 15px black;
+      
+ }
+
+ .h1{
+    font-size:xx-large;
+    padding-bottom: 5%;
+ }
+ 
+ .testo1, .testo2, .testo3, .testo4, .lista {
+    padding-bottom: 5%;
+ }
+
+
+
+
+
+
+
+
+
+
+
+  
