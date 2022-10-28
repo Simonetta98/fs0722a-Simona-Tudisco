@@ -1,0 +1,227 @@
+/* Your styles here */
+
+/* CSS HEADER*/
+
+body{
+    color: #393d41; 
+    font-size: 1.2rem;
+    font-family: 'Open Sans';
+    line-height: 1.65;
+    
+}
+
+.logo{
+    padding-bottom: 7%;
+    padding-top: 7%;
+}
+
+header{
+    text-align: center;
+    
+    background-color: black;
+    
+    
+}
+.header{
+    padding-top: 10%;
+    padding-bottom: 8%;
+}
+
+.header {
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+}
+ h2, h4{
+    color: #25a2c3;
+    font-family:'Montserrat';
+    line-height: 1.5cm;
+    
+   
+}
+.h1{
+    color: #25a2c3;
+    font-family:'Montserrat';
+    font-size: 35px;
+    line-height: 1cm;
+    padding-bottom: 3%;
+    padding-right: 6%;
+    padding-left: 6%;
+    
+}
+
+
+
+
+
+.button{
+    
+    cursor: pointer;
+    color: white;
+    background-color: #f04c2f;
+    font-family: 'Montserrat';
+    margin-top: 5%;
+    border-radius: 4px;
+    border: none;
+    width: 145px;
+    height: 45px;
+}
+.button:hover {
+    background-color: bisque;
+
+}
+/*FINE CSS HEADER*/
+
+/*INIZIO CSS MAIN*/
+
+/*ELEMENTI SEZIONE PROPRIETA'*/
+
+ .sezione3, .sezione4{
+    text-align:center;
+    padding-bottom: 10%;
+    padding-top: 10%;
+   
+   
+}
+
+.sezione1, .notebookpic, .divvuoto{
+
+    display: inline-block;
+    
+    padding-bottom: 10%;
+    padding-top: 10%;
+    text-align: left;
+}
+
+.divmain, .divvuoto{
+    padding-right: 7%;
+    padding-left: 7%;
+}
+
+h2{
+    padding-left: 10%;
+}
+
+    
+   
+
+/*FINE*/
+
+
+.notebook{
+    border-radius: 50%;
+     width: 100%;
+
+}
+
+h3{
+
+    font-size: 30px;
+    font-family:'Montserrat';
+    
+}
+.sezione3{
+    background-color: #f23817;
+    
+    color: white;
+}
+.blockquote{
+    font-style: italic;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    
+}
+.mario{
+    font-size: 22px;
+}
+.ceo{
+    font-size: 15px;
+}
+
+
+/* ELEMENTI DIV MAIN PROPRIETA'*/
+
+.iltuopc, .imparaora, .lavorasubito{
+   
+    border: 1px solid rgba(217, 217, 217, 0.904);
+
+    padding-bottom: 3%;
+    
+    border-radius: 0% 0% 1% 1%;
+    display: inline-block;
+    
+    width: 30%;
+    
+       
+}
+
+
+/*FINE*/
+
+.pc, .impara, .lavora{
+    max-width: 100%;
+       
+}
+
+
+/* ELEMENTI P PROPRIETA'*/
+
+.p1{
+
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-bottom: 3%;
+}
+.p2{
+    padding-right: 5%;
+    padding-left: 5%;
+     
+}
+
+/*FINE CSS MAIN*/
+
+/* FOOTER */
+
+.footer{
+    text-align:center;
+    background-color: #25a2c3;
+    padding-top: 10%;
+    padding-bottom: 15%;
+}
+.testi{
+    text-align:left ;
+    padding-left: 35%;
+    
+}
+
+h5{
+    color: white;
+    font-family:'Montserrat';
+    font-size: 40px;
+    line-height: 1cm;
+    padding-bottom: 4%;
+    padding-right: 6%;
+    padding-left: 6%;
+}
+
+.pfooter, .linkfooter{
+    color: rgba(255, 255, 255, 0.702);
+}
+
+i{
+    color: white;
+}
+.copy{
+    font-size: 15px;
+    padding-top: 2%;
+    
+}
+
+hr{
+    color: white;
+    border-style: solid;
+    border-width: 1px 0 0;
+    margin-top: 2%;
+    margin-left: 30%;
+    margin-right: 30%;
+
+}
