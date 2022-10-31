@@ -1,0 +1,34 @@
+.logojs{
+    border-radius: 35%;
+    box-shadow: 20px 30px;
+}
+.logojs:hover{
+    opacity: 0.4;
+}
+.body1{
+    font-size: 20px;
+    font-family:monospace;
+    color: rgb(255, 255, 255);
+    background-color: rgb(127, 197, 255);
+}
+.p{
+    margin-left: 40px;
+}
+hr{
+   margin-right: 30%;
+}
+.h1{
+    font-size: 45px;
+    color: blueviolet;
+    -webkit-text-stroke: 1px rgba(231, 231, 231, 0.872);
+    text-shadow: 30px 20px rgba(0, 0, 0, 0.116);
+}
+@counter-style customsymbols {
+    system: fixed;
+    symbols: "\1F972" "\1F630" "\1F631" ;
+    
+  }
+  
+  ul {
+    list-style: customsymbols;
+  }
