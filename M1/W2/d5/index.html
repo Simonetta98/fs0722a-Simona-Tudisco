@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+   
+    <div id="calcolatrice">
+
+          <input id="display1" class="display" type="area" value="" placeholder="0">         <!--DISPLAY CALCOLATRICE-->
+
+          <table id="calc">                                                                  <!--TASTI CALCOLATRICE-->
+            <tr>
+              <td><input class="button" type="button" value="C" onclick="c(this)"></td>
+              <td><input class="button" type="button" value="AC" onclick="ac(this);"></td>
+              <td><input class="button" type="button" value="/" onclick="digita(this)"></td>
+              <td><input class="button" type="button" value="x"  onclick="ics(this)"></td>
+            </tr>       
+            <tr>
+              <td><input class="button" type="button" value="7" onclick="digita(this)"></td>
+              <td><input class="button" type="button" value="8" onclick="digita(this)"></td>
+              <td><input class="button" type="button" value="9" onclick="digita(this)"></td>
+              <td><input class="button" type="button" value="-" onclick="digita(this)"></td>
+            </tr>      
+            <tr>
+              <td><input class="button" type="button" value="4" onclick="digita(this)"></td>
+              <td><input class="button" type="button" value="5" onclick="digita(this)"></td>
+              <td><input class="button" type="button" value="6" onclick="digita(this)"></td>
+              <td><input class="button" type="button" value="+" onclick="digita(this)"></td>
+            </tr>      
+            <tr>
+              <td><input class="button" type="button" value="1" onclick="digita(this)"></td>
+              <td><input class="button" type="button" value="2" onclick="digita(this)"></td>
+              <td><input class="button" type="button" value="3" onclick="digita(this)"></td>
+              <td rowspan="2"><input class="button" id="uguale" type="button" value="=" onclick="tot(this)"></td>
+            </tr>  
+            <tr>
+              <td><input class="button" type="button" value="0" onclick="digita(this)"></td>
+              <td><input class="button" type="button" value="00" onclick="digita(this)"></td>
+              <td><input class="button" type="button" value="," onclick="punto(this)"></td>
+            </tr>  
+          </table>
+        </form>
+      </div>
+
+      <script src="javascript/js.js"></script>
+</body>
+</html>
