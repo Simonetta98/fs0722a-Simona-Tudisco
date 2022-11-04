@@ -10,7 +10,7 @@ function c(){                                                // tasto elimina tu
     let elimina= document.getElementById('display1');
     elimina.value = '';
 }
-function ac(){                                               //tasto cancella ultima cifra (ho provato ma non funziona)
+function ac(){                                               //tasto cancella ultima cifra 
     let canc= document.getElementById('display1').value;
     canc= canc.slice(0,-1);
     document.getElementById('display1').value= canc;
@@ -25,4 +25,14 @@ function punto(){
     virgola.value += '.' ;
 }
 
+// funzioni cambia COVER
 
+function cambia(){
+    document.getElementById('calcolatrice').style.backgroundImage="url(../pics/boh.webp)"
+}
+function cover2(){
+    document.getElementById('calcolatrice').style.backgroundImage="url(../pics/cubi.jpeg)"
+}
+function cover3(){
+    document.getElementById('calcolatrice').style.backgroundImage="url(../pics/fiamme.jpeg)"
+}
