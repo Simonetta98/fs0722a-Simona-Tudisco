@@ -22,7 +22,7 @@ function aggiungiLista(event) {                   /* aggiungiLista ha come param
     buttonDelete.setAttribute('id','delete');                     /* gli do un id*/ 
     buttonDelete.appendChild(document.createTextNode('X'));     /* al suo interno c'è una X */
     li.appendChild(buttonDelete);                               /* sono figli degli elementi <li>*/
-    
+   
     
                                                            /*BOTTONE DELETE */
     

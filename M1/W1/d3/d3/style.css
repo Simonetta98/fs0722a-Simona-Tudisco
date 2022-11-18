@@ -6,9 +6,7 @@
 } 
 .img-container { 
     text-align: center;
-    
-    
-}
+    }
 .h1{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
  color: rgb(41, 40, 40);
@@ -21,6 +19,7 @@
 }
 .figcap{ 
     color: rgba(153, 153, 147, 0.883);
+    
 } 
 #prep{ 
     margin-left: 150px;
@@ -35,6 +34,11 @@
  } 
  #p{ 
     color: rgb(44, 105, 99);
-    background-color: rgba(228, 230, 64, 0.381);
+    background-color: rgba(227, 230, 64, 0.156);
+    border-top-style: solid; 
+    border-top-width: 2ch;
+    border-top-color: rgba(227, 230, 64, 0.096);
+    } 
     
- } 
+      
+ 
