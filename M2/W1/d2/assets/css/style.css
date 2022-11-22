@@ -144,6 +144,17 @@ section h2 {
   bottom: 115px;
   left: 30px;
 }
+@media screen and (min-width: 700px) {     /*#################*/
+  section h2{
+    bottom: 130px;
+
+  }
+}
+@media screen and (min-width: 1200px) {
+  section h2{
+    bottom: 140px;
+  }
+}
 
 /* ELEMENTI NEL MAIN - ARTICLE */
 
