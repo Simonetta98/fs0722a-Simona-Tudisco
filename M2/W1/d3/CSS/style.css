@@ -1,0 +1,376 @@
+body{
+    font-size: 19px;
+    font-family: 'Roboto', sans-serif;
+    color: #732104;  
+}
+
+a{
+    text-decoration: none;
+    color: #732104;
+    
+}
+
+header{
+    
+    background-color: #fef7e2;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-radius: 160px;
+    margin-top: 20px;
+
+}
+
+header{
+    margin: 20px;
+}
+
+h1{
+    font-size: 35px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.5px;
+
+    padding:30px;
+    background-color: #ffdf7f;
+    border-radius: 55px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 25px;
+    word-spacing: 15px;
+}
+h2{
+    font-size: 45px;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 0.5px;
+
+    padding: 35px;
+}
+
+
+
+  ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 60px;
+    margin-right: 60px;
+    gap: 20px;
+    text-align: center;
+    
+   
+  }
+  
+  li{
+    list-style-type: none;
+    font-weight: 500;
+    background-color:  #ffdf7f;
+    border-radius: 50px;
+    padding: 18px;
+    flex-grow: 1;
+    flex-basis: 0;
+    letter-spacing: 0.5px;
+    
+  }
+  li:hover{
+    background-color: rgba(236, 193, 76, 0.892);
+  }
+
+
+
+  /* ##################     MAIN     ##################*/
+
+  main{
+    display: flex;
+    flex-direction: column;
+   
+
+  }
+  .img{
+    height: 280px;
+    background-image:  url("../imgs/honey.jpg");
+    background-size:cover ;
+ }
+
+ .container{
+    background-color: #fef7e2;
+    border-radius: 50px;
+    overflow: hidden;
+    text-align: center;
+    margin: 20px;
+ }
+
+
+ .container > article img {
+    max-width: 100%;
+  }
+
+button{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #732104;
+    font-weight: 500;
+
+    border: none;
+    background-color: #ffdf7f;
+
+    margin-top: 20px;
+    margin-bottom: 15px;
+    border-radius: 50px;
+    padding: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    
+}
+
+section{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    padding-top: 20px;
+    margin-left: 65px;
+    margin-right: 65px;
+    
+}
+  .one{
+    font-size: 20px;
+    font-weight: 500;
+    word-spacing: 2px;
+}
+.three{
+    font-size: 15px;
+    line-height: 25px;
+    
+}
+
+
+
+/* #####################     FOOTER    ######################*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.container2{
+    background-color: #fef7e2;
+    border-radius: 50px;
+    text-align: center;
+    margin: 20px;
+}
+.container3{
+    padding: 50px;
+    text-align: left;
+}
+
+p{
+    line-height: 30px;
+    white-space: pre-line;
+}
+
+h3{
+    font-size: 25px;
+    font-weight: 900;
+    word-spacing: 2px;
+}
+
+.container3 > img {
+    max-width: 100%;
+    padding-top: 30px;
+}
+
+
+/* ################     LAYOUT TABLET 700PX     ###############*/
+
+@media screen and (min-width: 700px)  {
+   
+   li{
+    padding: 12px;
+    font-size: 15px;
+   }
+
+   main{
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+  }
+  h2{
+    text-align: left;
+  }
+  .container{
+    margin: 15px;
+    height: 320px;
+    width: 320px;
+ }
+ .img{
+    height: 200px;
+    background-image:  url("../imgs/honey.jpg");
+    background-size: cover;
+ }
+ section{
+    margin-left: 60px;
+    margin-right: 60px;
+    
+}
+  .one{
+    font-size: 15px;
+    font-weight: 500;
+    word-spacing: 2px;
+} 
+
+.two{
+    padding-top: 5px;
+   
+}
+.three{
+    font-size: 10px;
+    line-height: 0px;
+}
+button{
+    font-size: 15px; 
+    padding-left: 70px;
+    padding-right: 70px;
+}
+}
+
+/*##############     LAYOUT 1024     ###############*/
+
+@media screen and (min-width: 1024px)  {
+ul{
+    flex-direction: column;
+}
+header{                             /*SIDE NAV BAR*/
+    border-radius: 0%;
+   position: fixed;
+   height: 100%;
+  margin: 0;  
+}
+
+
+ li{
+    padding: 60px;
+    margin-bottom: 20px;
+    border-radius: 70px;
+}
+h1{
+    padding: 50px;
+    border-radius: 80px;
+   font-size: 45px;
+   margin-bottom: 50px;
+}
+h1 > img{
+    width: 80px;
+    height: 50px;
+}
+li{
+    font-size: 25px;
+}
+
+
+main, h2{
+    
+    margin-left: 50%;
+}
+
+h2{
+    margin-right: -250px;
+    font-size: 65px;
+
+}
+main{
+    flex-direction: row;
+    flex-wrap: nowrap;
+   
+  }
+
+  .container{
+    margin: 15px;
+   padding-bottom: 30px;
+    flex-shrink: 0;
+    height: 350px;
+    
+ }
+ button{
+    margin-top: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+ }
+ 
+
+ footer{
+    width: 1400px;
+    margin-left: 50%;
+    
+}
+.footerH2{
+  margin-left: 0%;
+  padding-top: 100px;
+}
+h3{
+    font-size: 35px;
+}
+.container3 > p{
+    font-size: 25px;
+    line-height: 45px;
+}
+.container3 > img {
+    width: 1400px;
+}
+
+}
+
+
+@media screen and (min-width: 1200px){
+    li{
+        padding: 70px;
+        margin-bottom: 40px;
+        border-radius: 90px;
+        font-size: 30px;
+    }
+    h1{
+        padding: 70px;
+        border-radius: 200px;
+       font-size: 60px;
+       margin-bottom: 70px;
+    }
+    h2{
+        font-size: 90px;
+        margin-right: -450px;
+    }
+
+    .container{
+        
+        height: 500px;
+        width: 500px;
+        
+     }
+     .img{
+        padding-bottom: 95px;
+     }
+     button{
+        margin-top: 50px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+     }
+
+    .one, .two{
+      font-size: 30px;
+      }
+  .three{
+      font-size: 30px;
+      line-height: 30px;
+      }
+      button{
+        font-size: 20px;
+        
+        padding-top: 25px;
+        padding-bottom: 25px;
+      }
+/*1200 da completare......*/
+   
+
+
+    
+
+}
