@@ -1,0 +1,79 @@
+/*
+1 creazione del testo e formattazione di 1 parola da far ruotare
+2 inserimento delle altre 2 parole
+3 sovrapporre le 3 parole
+4 mostrare 1 parola e nascondere le altre 2
+5 animare 1 parola (fadein - fadeout con spostamento)
+6 animare le altre 2 parole
+7 ritardare progressivamente l'animazione delle altre 2 parole 
+*/
+
+body{
+    background-color:black;
+    font-size: 30px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+#testoAlternato{
+    position:relative;
+    top:12rem;
+    border:2px solid rgb(255, 255, 255);
+    padding: 1rem;
+    margin: auto;
+    width: 50%;
+    line-height: 38px;
+    word-spacing: 2px;
+}
+
+p{
+    position: relative;
+}
+
+i{ 
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px ;
+    opacity: 0;
+    margin-left: 10px;
+    position: absolute;
+    top: 4rem;
+    color: #fff;
+    text-shadow:
+      /* White glow */
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      /* Green glow */
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+   
+}
+
+#one{
+    animation-name: slide;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+#two{
+    animation-name: slide;
+    animation-delay: 2s;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+#three{
+    animation-name: slide;
+    animation-delay: 4s;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slide { 
+    0%{opacity:0; top: 2rem}
+    33%{opacity:1; top: 4.5rem;}
+    66%{opacity:0; top: 7rem;}
+    
+    
+}
