@@ -301,8 +301,7 @@ aside div p{
         margin-right: 20px;
     }
 }
-
-/* MOBILE 480 */         /* ######## NON COMPLETO #########*/
+/* MOBILE 480 */         
 @media screen and (max-width: 480px){
     #flexContainer2{
         gap: 20px;
@@ -313,5 +312,26 @@ aside div p{
   .noMobile{
     display: none;
   }
-  
+  .numbers{
+    flex-basis: 90%;  
 }
+.mob{
+    
+    margin-right:-100%;
+}
+#text{
+    margin-right: 500px;
+
+}
+#flexContainer5{
+    margin-right: 300px;
+}
+.time{
+    margin-left: 0;
+}
+#articles{
+    margin-right: 400px;
+}
+ 
+}
+
