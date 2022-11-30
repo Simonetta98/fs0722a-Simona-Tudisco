@@ -1,0 +1,76 @@
+@import 'variables';
+@import 'buttons';
+body{
+    background-image: url('../img/Aesthetic-wallpaper-building-architecture-form.jpeg') ;
+    background-size: cover;
+   
+}
+
+a{
+    text-decoration: $remove;
+    color: black;
+    &:hover{
+        color: $b-color2;
+        transition: 0.5s;
+    }
+}
+header{
+    padding-bottom: $main-margin ;
+}
+
+.container{
+    width: $full-width;
+    text-align: center;
+    display: flex;
+    font-family: $main-font;
+    background-color: rgba(173, 173, 173, 0.705);
+    
+    .logo{
+        flex-shrink: 7;
+    }
+    img{
+        width: $full-width; 
+       
+    }
+    .space{
+        width: 90px;
+    }
+    .side1{
+        flex-shrink: 1.3;
+        margin-left: $main-margin;
+
+        button{
+            width: $b-width;
+            font-size: $b-fontsize;
+            font-family: $main-font;
+            border: none;
+            border-radius: $b-width;
+            &:hover{
+                background-color: $hover-color;
+                transition: 0.5s;
+                
+            }
+        }
+        .one{
+            background-color: $b-color1;
+        }
+        .two{
+            background-color: $b-color2;
+            color: white;
+        }
+    }
+}
+nav{
+    align-items: center;
+    padding-top: $main-padding;
+    padding-bottom: $main-padding;
+    div{
+        margin-left: $main-margin;
+    }
+    ul{
+        justify-content:end;
+        li{
+            margin-right: $main-margin;
+        }    
+    }
+}
