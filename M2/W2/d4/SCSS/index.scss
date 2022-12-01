@@ -1,0 +1,185 @@
+@import 'variables';
+
+body{
+    color: $mainColor;
+    background-color: rgba(0, 0, 0, 0.893);
+    h1{
+      font-family: 'Spectral', serif;
+      font-size: 35px;
+      line-height: 20px;
+    }
+    p{
+        font-family: 'Roboto', sans-serif;
+    }
+}
+
+/* @extend */
+%a{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    &:hover{
+        color: $hoverColor;
+        transition: 0.5s;
+    }
+}
+
+nav.home{
+    background-color: rgba(240, 248, 255, 0.099);
+}
+nav, ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div{                             
+        margin-left: 30px;
+    }
+}
+ul{
+    margin-right: 10px;
+    li{                             
+        margin-right: 20px;
+        list-style-type: none;
+        a{
+            color: $mainColor;
+            text-decoration: none;
+            &:hover{
+                color: $hoverColor;
+                transition: 0.5s;
+            }
+        }
+    }
+}
+.container{
+    margin-top: 18%;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    width: $b-width;
+    border-radius: $b-radius;
+    background-color: $b-color;
+    margin-right: 5px;
+    &:hover{
+        background-color: $hoverColor;
+        transition: 0.5s;
+        transform: scale(1.1);
+    }
+    @media screen and (max-width: 600px){
+        width: 90px;
+        height: 20px;
+      } 
+}
+.b-two{
+    background-color: rgba(0, 0, 0, 0.645);
+    color: $mainColor;
+}
+
+/******  HOME   *******/
+
+body{
+    margin: 0;
+}
+
+/* @extend */
+%flex{
+    display: flex;
+    margin-left: 25px;
+    h1{
+        padding-top: 25px;
+        font-size: 80px;
+        letter-spacing: 3px;
+        @media screen and (max-width: 600px){
+            font-size: 50px;
+          } 
+    }
+}
+main{
+    @extend %flex;
+    width: 100vw;    /*same as viewport size*/
+    height: 100vh;
+    .space{
+        width: 100px;
+    }
+    .bigger{
+        flex-shrink: 0.7;
+        p{
+            width: 800px;
+            font-size: 20px;
+            @media screen and (max-width: 600px){
+               font-size: 15px;
+               width: 290px;
+              } 
+        }
+    }
+    img{
+        height: 100%;
+        object-fit: cover; 
+    }
+}
+
+
+  .sidenav {
+        
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        
+        padding-top: 100px;
+        padding-right: 180px;
+        @media screen and (max-width: 600px){
+            padding-right: 70px;
+          } 
+        nav{
+            display: flex;
+            flex-direction: column;
+            a{
+                font-size: 25px;
+                padding-bottom: $padding;
+                color: rgba(0, 0, 0, 0.744);
+                @extend %a;
+                @media screen and (max-width: 600px){
+                    font-size: 20px;
+                  } 
+            }
+        }
+      }
+      
+      /* mixin */
+      @mixin homeButton($bgColor){ 
+
+        width: 100px;
+        margin-right: 10px;
+        display: inline-block; 
+    
+        background: $bgColor; 
+        
+        color: black;
+        font-size: 15px;
+        border: none;
+        
+        &:hover{
+            background-color: $hoverColor;    
+        }
+    }
+    .bigger{
+        button{
+            @include homeButton(rgba(132, 181, 132, 0.748));
+        }
+    }
+
+    /********** CONTACTS ***********/
+
+    button.contact{
+        @include homeButton(rgba(117, 237, 255, 0.748));
+    }
+  #white, #white2, #white3{
+    color: white;
+    
+  }

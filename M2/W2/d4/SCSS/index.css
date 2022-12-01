@@ -1,0 +1,197 @@
+/* used colors */
+/* buttons style */
+/* home mesures */
+body {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.893);
+}
+body h1 {
+  font-family: "Spectral", serif;
+  font-size: 35px;
+  line-height: 20px;
+}
+body p {
+  font-family: "Roboto", sans-serif;
+}
+
+/* @extend */
+.sidenav nav a {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+.sidenav nav a:hover {
+  color: rgba(128, 128, 128, 0.752);
+  transition: 0.5s;
+}
+
+nav.home {
+  background-color: rgba(240, 248, 255, 0.099);
+}
+
+nav, ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav div, ul div {
+  margin-left: 30px;
+}
+
+ul {
+  margin-right: 10px;
+}
+ul li {
+  margin-right: 20px;
+  list-style-type: none;
+}
+ul li a {
+  color: white;
+  text-decoration: none;
+}
+ul li a:hover {
+  color: rgba(128, 128, 128, 0.752);
+  transition: 0.5s;
+}
+
+.container {
+  margin-top: 18%;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  font-family: "Roboto", sans-serif;
+  border: none;
+  width: 80px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.726);
+  margin-right: 5px;
+}
+button:hover {
+  background-color: rgba(128, 128, 128, 0.752);
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+@media screen and (max-width: 600px) {
+  button {
+    width: 90px;
+    height: 20px;
+  }
+}
+
+.b-two {
+  background-color: rgba(0, 0, 0, 0.645);
+  color: white;
+}
+
+/******  HOME   *******/
+body {
+  margin: 0;
+}
+
+/* @extend */
+main {
+  display: flex;
+  margin-left: 25px;
+}
+main h1 {
+  padding-top: 25px;
+  font-size: 80px;
+  letter-spacing: 3px;
+}
+@media screen and (max-width: 600px) {
+  main h1 {
+    font-size: 50px;
+  }
+}
+
+main {
+  width: 100vw; /*same as viewport size*/
+  height: 100vh;
+}
+main .space {
+  width: 100px;
+}
+main .bigger {
+  flex-shrink: 0.7;
+}
+main .bigger p {
+  width: 800px;
+  font-size: 20px;
+}
+@media screen and (max-width: 600px) {
+  main .bigger p {
+    font-size: 15px;
+    width: 290px;
+  }
+}
+main img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.sidenav {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  padding-top: 100px;
+  padding-right: 180px;
+}
+@media screen and (max-width: 600px) {
+  .sidenav {
+    padding-right: 70px;
+  }
+}
+.sidenav nav {
+  display: flex;
+  flex-direction: column;
+}
+.sidenav nav a {
+  font-size: 25px;
+  padding-bottom: 40px;
+  color: rgba(0, 0, 0, 0.744);
+}
+@media screen and (max-width: 600px) {
+  .sidenav nav a {
+    font-size: 20px;
+  }
+}
+
+/* mixin */
+.bigger button {
+  width: 100px;
+  margin-right: 10px;
+  display: inline-block;
+  background: rgba(132, 181, 132, 0.748);
+  color: black;
+  font-size: 15px;
+  border: none;
+}
+.bigger button:hover {
+  background-color: rgba(128, 128, 128, 0.752);
+}
+
+/********** CONTACTS ***********/
+button.contact {
+  width: 100px;
+  margin-right: 10px;
+  display: inline-block;
+  background: rgba(117, 237, 255, 0.748);
+  color: black;
+  font-size: 15px;
+  border: none;
+}
+button.contact:hover {
+  background-color: rgba(128, 128, 128, 0.752);
+}
+
+#white, #white2, #white3 {
+  color: white;
+}/*# sourceMappingURL=index.css.map */
