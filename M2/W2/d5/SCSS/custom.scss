@@ -1,0 +1,146 @@
+@import 'variables';
+@import 'function';
+
+/********* formattazioni generali *********/
+
+h1, h2{
+    font-size: ($big)+20;
+    @media screen and (max-width: 991px){
+        font-size: ($big)+10;
+       }
+}
+h3{
+    font-size: $big;
+    @media screen and (max-width: 991px){
+        font-size: ($big)-5;
+       }
+}
+li{
+   list-style: none;
+}
+a{
+   text-decoration: none;
+}
+
+
+/********* NAVIGATION BAR *********/
+
+nav{
+    background-color: $c-purple;
+    color: $c-pinkish;
+    #logonav{
+        padding-left: $light-medium;
+    }
+ 
+   #navbarNavDropdown{
+    justify-content: end;       
+     ul{
+        li{
+            margin: 0 $light 0 $light; /* top right bottom left */
+            a{
+              color: $c-pinkish;
+            }
+        }
+        align-items: center;            /* vertically align icons */
+        padding-right:$light-medium;
+      }
+   }
+}
+
+/*********** HEADER ***********/
+
+header{
+    background-image: url('../imgs/pexels-aleksandar-pasaric-325185.jpg');
+    background-size:auto;
+    background-repeat:no-repeat;
+    background-position:fixed;
+    background-position:  0 -2.8*($extra-big);   /* x, y(-280px) */
+    
+    height: ($extra-big)*5.5;       /* 550px */
+    padding: $light-medium;
+}
+
+/** nel caso in cui dovessi aggiungere altri bottoni, li creo velocemente in una sola riga **/
+@mixin forButtons($border, $padding, $width, $radius, $bg-color, $color){
+border:$border;
+padding: $padding;
+width: $width;
+border-radius: $radius;
+background-color: $bg-color;
+color: $color;
+  &:hover{
+    background-color: lighten($bg-color, 15%);        //sass lighten function on hover
+    transition: 0.5s;
+  }
+}
+
+.first-button{
+    @include forButtons( none, 5px, ($extra-big)+80, 4px, $c-purple, $c-light)
+}
+
+/*********** MAIN ***********/
+
+#main-div-svg{
+    padding: 0;
+}
+main{
+    #main-text{
+        padding-top: $medium;
+        padding-left: $light-medium ;
+        padding-right: $light-medium ;
+        background-color: $c-grey;
+        ////////////FUNZIONE CAMBIA COLORE
+        // se cambio il background-color in $c-dark il testo diventa bianco
+        /* background-color: $c-dark;
+           color: lumen($c-dark); */
+    }
+}
+#partnership{
+    img{
+        width: 50%;
+        @media screen and (max-width: 991px){
+           width: 22%;
+          } 
+    }
+}
+
+/*********** SEZIONE OPINIONI *************/
+#opinions{
+    padding-bottom: $extra-big;
+    img{
+        width: 12%;
+        border-radius: 50%;
+        padding: $light-medium;
+        @media screen and (max-width: 991px){
+            width: 22%;
+           } 
+    }
+}
+#carouselExampleControls{
+    padding-top: ($big)+20;
+}
+
+/************* FOOTER *************/
+#footer-bootpro{
+    margin-left: -1*($extra-big);
+    margin-top: $light-medium; 
+    @media screen and (max-width: 991px){
+        margin-left: ($light)-5;
+        padding-bottom: $light;
+       }
+}
+footer{
+    color: $c-light;
+    padding-top: $light-medium;
+    background-color: $c-purple;
+    #copyright{
+        margin-top: $light;
+        font-size: $light;
+    }
+    ul{
+        @media screen and (max-width: 991px){
+            padding-right: 40px;
+           }
+        
+    }
+}

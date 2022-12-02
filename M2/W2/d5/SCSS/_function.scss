@@ -1,0 +1,10 @@
+@function lumen($bg-color) {
+    @if (lightness($bg-color) >= 50) {      /* hsl -lightness */
+        @return #000;
+    }
+    @else {
+        @return #FFF;
+    }
+}
+
+/*  ↑ ↑ ↑ ↑ esempio nella sezione main di custom.scss ↑ ↑ ↑ ↑ */

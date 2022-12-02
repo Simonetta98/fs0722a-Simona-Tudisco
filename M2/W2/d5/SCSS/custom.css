@@ -1,0 +1,146 @@
+@charset "UTF-8";
+/* used colors */
+/* used mesures */
+/*  ↑ ↑ ↑ ↑ esempio nella sezione main di custom.scss ↑ ↑ ↑ ↑ */
+/********* formattazioni generali *********/
+h1, h2 {
+  font-size: 60px;
+}
+@media screen and (max-width: 991px) {
+  h1, h2 {
+    font-size: 50px;
+  }
+}
+
+h3 {
+  font-size: 40px;
+}
+@media screen and (max-width: 991px) {
+  h3 {
+    font-size: 35px;
+  }
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/********* NAVIGATION BAR *********/
+nav {
+  background-color: rgb(111, 48, 220);
+  color: rgb(242, 47, 79);
+}
+nav #logonav {
+  padding-left: 20px;
+}
+nav #navbarNavDropdown {
+  justify-content: end;
+}
+nav #navbarNavDropdown ul {
+  align-items: center; /* vertically align icons */
+  padding-right: 20px;
+}
+nav #navbarNavDropdown ul li {
+  margin: 0 10px 0 10px; /* top right bottom left */
+}
+nav #navbarNavDropdown ul li a {
+  color: rgb(242, 47, 79);
+}
+
+/*********** HEADER ***********/
+header {
+  background-image: url("../imgs/pexels-aleksandar-pasaric-325185.jpg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-position: 0 -280px; /* x, y(-280px) */
+  height: 550px; /* 550px */
+  padding: 20px;
+}
+
+/** nel caso in cui dovessi aggiungere altri bottoni, li creo velocemente in una sola riga **/
+.first-button {
+  border: none;
+  padding: 5px;
+  width: 180px;
+  border-radius: 4px;
+  background-color: rgb(111, 48, 220);
+  color: white;
+}
+.first-button:hover {
+  background-color: #9d71e7;
+  transition: 0.5s;
+}
+
+/*********** MAIN ***********/
+#main-div-svg {
+  padding: 0;
+}
+
+main #main-text {
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgb(244, 244, 244);
+  /* background-color: $c-dark;
+     color: lumen($c-dark); */
+}
+
+#partnership img {
+  width: 50%;
+}
+@media screen and (max-width: 991px) {
+  #partnership img {
+    width: 22%;
+  }
+}
+
+/*********** SEZIONE OPINIONI *************/
+#opinions {
+  padding-bottom: 100px;
+}
+#opinions img {
+  width: 12%;
+  border-radius: 50%;
+  padding: 20px;
+}
+@media screen and (max-width: 991px) {
+  #opinions img {
+    width: 22%;
+  }
+}
+
+#carouselExampleControls {
+  padding-top: 60px;
+}
+
+/************* FOOTER *************/
+#footer-bootpro {
+  margin-left: -100px;
+  margin-top: 20px;
+}
+@media screen and (max-width: 991px) {
+  #footer-bootpro {
+    margin-left: 5px;
+    padding-bottom: 10px;
+  }
+}
+
+footer {
+  color: white;
+  padding-top: 20px;
+  background-color: rgb(111, 48, 220);
+}
+footer #copyright {
+  margin-top: 10px;
+  font-size: 10px;
+}
+@media screen and (max-width: 991px) {
+  footer ul {
+    padding-right: 40px;
+  }
+}/*# sourceMappingURL=custom.css.map */
