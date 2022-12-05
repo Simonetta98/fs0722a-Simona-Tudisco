@@ -80,10 +80,10 @@ function getId(){
     console.log(newPerson);
     newPerson.write().bind(newPerson);
 }
-document.getElementById('submit').addEventListener('submit', put);
-function put(){
-   return getId();
-
+document.getElementById('submit').addEventListener('click', putInTable);
+function putInTable(e){
+    e.preventDefault();
+    getId();
 }
 
 
