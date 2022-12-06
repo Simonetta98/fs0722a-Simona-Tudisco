@@ -52,7 +52,68 @@
 
 
    <script>
-    /*
+
+// ESERCIZIO 1
+// secondo metodo
+/*
+    class Persons{
+        constructor(name1, age1, name2, age2){  //posso aggiungere anche un terzo parametro e confrontare 3 persone
+            this.name1 = name1;
+            this.age1 = age1;
+            this.name2 = name2;
+            this.age2 = age2
+        }
+        confrontaEtà(){
+            if(this.age1 > this.age2){
+                return `${this.name1} è più grande di ${this.name2}`;
+            }
+            else if(this.age1 < this.age2){
+                return `${this.name2} è più grande di ${this.name1}`;
+            }
+            else if(this.age1 == this.age2){
+                return `${this.name2} e ${this.name1} hanno la stessa età`;
+            }
+            else{
+                return `L'età inserita deve essere un numero`;
+            }
+        }
+    }
+    var p1_p2 = new Persons ('Paola', 20, 'Roberto', 30);
+    console.log(p1_p2)
+    console.log(p1_p2.confrontaEtà())
+*/
+
+// ESERCIZIO 1
+// primo metodo
+
+    class Person{
+        constructor(name, age){  
+            this.name = name;
+            this.age = age
+        }
+        confrontaEtà(p){
+            if(this.age >p.age){
+                return `${this.name} è più grande di ${p.name}`;
+            }
+            else if(this.age < p.age){
+                return `${p.name} è più grande di ${this.name}`;
+            }
+            else if(this.age == p.age){
+                return `${p.name} e ${this.name} hanno la stessa età`;
+            }
+        }
+    }
+    var p1 = new Person ('Paola', 20);
+    var p2 = new Person ('Chiara', 30);
+    var p3 = new Person ('Alfredo', 20);
+    console.log(p1, p2, p3);
+    console.log(p1.confrontaEtà(p2))
+
+
+
+//secondo esercizio non completo
+
+        /*
        var obj = [
         {id: 1, nome: 'Luca', cognome: 'Rossi', classe: 'A'},
         {id: 2, nome: 'Luigi', cognome: 'Verdi', classe: 'A'},
@@ -82,36 +143,9 @@ class Paginazione{
 
 }*/
 
-// ESERCIZIO 1
-
-
-    class Persons{
-        constructor(name1, age1, name2, age2){  //posso aggiungere anche un terzo parametro e confrontare 3 persone
-            this.name1 = name1;
-            this.age1 = age1;
-            this.name2 = name2;
-            this.age2 = age2
-        }
-        confrontaEtà(){
-            if(this.age1 > this.age2){
-                return `${this.name1} è più grande di ${this.name2}`;
-            }
-            else if(this.age1 < this.age2){
-                return `${this.name2} è più grande di ${this.name1}`;
-            }
-            else if(this.age1 == this.age2){
-                return `${this.name2} e ${this.name1} hanno la stessa età`;
-            }
-            else{
-                return `L'età inserita deve essere un numero`;
-            }
-        }
-    }
-    var p1_p2 = new Persons ('Paola', 20, 'Roberto', 30);
-    console.log(p1_p2)
-    console.log(p1_p2.confrontaEtà())
-
    </script>
+
+   
 
    <!--bootstrap-->
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
