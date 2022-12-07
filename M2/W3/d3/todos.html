@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local storage</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/58fbb3b759.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+    <div class="container">
+        <h1>My To Do List</h1>
+        <div>
+            <form>
+            <input id="usr" type="text" placeholder="Scrivi qui..." class="textInput">
+            <button onclick="save()" id="add" type="submit">ADD</button>
+        </form>
+        </div>
+
+            <div>
+            <ul id="lists">
+
+
+            </ul>
+        </div>
+    </div> 
+
+
+
+
+    <script src="javascript/js.js"></script>
+    <script>
+       
+        function save(){
+            var usr = document.querySelector("#usr").value;
+            localStorage.setItem(`${usr}`, usr);
+            
+        }
+        /*
+        function deleteItem(){
+            localStorage.removeItem("usr");
+            
+        }
+      */
+    </script>
+</body>
+</html>

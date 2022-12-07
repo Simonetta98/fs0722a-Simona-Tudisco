@@ -1,0 +1,64 @@
+ {
+    "artist": [{
+        "name": "Mariello",
+        "Cognome": "Rossi"
+    }],
+    "age": "24",
+    "birhday":[{
+        "day": "7",
+        "month": "April",
+        "year": "1998"
+    }],
+    "totAlbums": "3",
+    "totSongs": "9",
+    "discografia": 
+    [{
+ "album1": [{
+    "song1" : "song1",
+    "song2" : "song2",
+    "song3" : [{
+        "version1": "live",
+        "version2": "remastered",
+        "version3": "original"
+    }]
+ }],
+ "album2": [{
+    "song1" : "song1",
+    "song2" : "song2",
+    "song3" : [{
+        "version1": [{
+            "live1": "2018",
+            "live2": "2015",
+            "live3": [{
+                "year": "2013",
+                "months": [{
+                    "month1": "April",
+                    "month2": "May",
+                    "days":[{
+                        "Day1": "monday",
+                        "Day2": "sunday"
+                    }]
+                }]
+            }]
+        }],
+        "version2": "remastered",
+        "totDays": [{
+            "day1":[{
+                "hours": "4h"
+            }],
+            "day2":[{
+                "hours": "7h"
+            }],
+            "day3": [{
+                "hours": "3h"
+            }]
+        }]
+    }]
+ }],
+ "album3": [{
+    "song1" : "song1",
+    "song2" : "song2",
+    "song3" : "song3"
+ }]
+ }]
+}
