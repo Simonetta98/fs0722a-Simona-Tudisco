@@ -10,12 +10,12 @@
     <div id="counter"></div>
     
     <script>
-        function storage(){
+          function storage(){
             if (typeof(Storage) != undefined){
                 timeCounter();
             }
             else {
-                document.getElementById("result").innerHTML = "Il tuo browser non supporta Web storage";
+                document.getElementById("counter").innerHTML = "Il tuo browser non supporta Web storage";
             }
         }
             function timeCounter() {
@@ -28,8 +28,15 @@
                 document.getElementById("counter").innerHTML = "Time counter : " + sessionStorage.clickcount;
             } 
         }
-        const time = setInterval(timeCounter, 1000);
+        const time = setInterval(timeCounter, 1000);  
 
+        //// operatore ternario 
+        /*
+        function storage2(){
+            sessionStorage.clickcount? sessionStorage.clickcount = Number(sessionStorage.clickcount)+1 : sessionStorage.clickcount = 1;
+            document.getElementById("counter").innerHTML = "Time counter : " + sessionStorage.clickcount;
+        }
+    const time = setInterval(storage2, 1000); */
 
     </script>
 </body>

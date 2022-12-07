@@ -29,11 +29,7 @@ function aggiungiLista(event) {                   /* aggiungiLista ha come param
     buttonDelete.addEventListener('click', cancella);        /* la funzione cancella permette al bottone delete
                                                                   di prendere il suo elemento padre (quindi <li>) 
                                                                   ed elminarlo al click */
-buttonDelete.addEventListener('click', deleteItem);
-function deleteItem(){
-    localStorage.removeItem();
-    
-}
+
 
     function cancella(event){
         event.target.parentNode.remove(); 
