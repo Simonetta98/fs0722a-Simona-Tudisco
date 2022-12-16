@@ -1,0 +1,742 @@
+footer {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  /*album in corso*/
+  /*album in corso fine*/
+  /*player controller*/
+  /*Player Controller End*/
+  /*Right Controller*/
+}
+footer #player {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px 0;
+  background-color: #171717;
+}
+footer #player * {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+footer .album-playing-container {
+  flex-basis: 30%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+footer .album-playing-container img {
+  max-width: 40px;
+  margin-right: 10px;
+}
+footer .album-playing-container i {
+  font-size: 16px;
+}
+footer .album-name {
+  padding-right: 40px;
+  display: flex;
+  flex-direction: column;
+}
+footer .album-icons {
+  display: flex;
+  flex-direction: column;
+}
+footer .fa-heart {
+  padding-right: 15px;
+}
+footer .player-controller-container {
+  flex-basis: 40%;
+  margin-bottom: 0.84rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .player-controller {
+  padding: 1rem 0 1rem;
+  padding-right: 5.5%;
+}
+footer .player-controller ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .progressbar-and-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .progress-bar {
+  height: 0.25rem;
+  flex-grow: 1;
+  background-color: #535353;
+  border-radius: 5px;
+  position: relative;
+}
+footer .partial-bar {
+  height: 0.25rem;
+  width: 25%;
+  background-color: #fff;
+  border-radius: 5px;
+}
+footer .partial-bar:hover::before {
+  content: "";
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  bottom: -5px;
+  left: 23%;
+  cursor: pointer;
+}
+footer .song-progress {
+  padding-right: 1.9rem;
+}
+footer .song-duration {
+  padding-left: 1.9rem;
+}
+footer .player-controller ul li {
+  display: inline;
+}
+footer #player i:hover {
+  color: #1dd05d;
+}
+footer .fa-random,
+footer .fa-step-backward,
+footer .fa-play-circle,
+footer .fa-step-forward {
+  padding-right: 1.25rem;
+}
+footer .fa-random,
+footer .fa-step-backward,
+footer .fa-step-forward,
+footer .fa-redo-alt {
+  font-size: 0.75rem;
+}
+footer .fa-play-circle {
+  font-size: 24px;
+}
+footer .right-controller-container {
+  flex-basis: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+footer .right-controller {
+  display: flex;
+  flex-direction: row;
+}
+footer .right-controller i {
+  font-size: 12px;
+}
+footer .right-controller a {
+  padding-right: 15px;
+}
+footer .right-controller-bar {
+  flex-basis: 20%;
+  height: 4px;
+  background: #535353;
+  border-radius: 2px;
+  align-self: center;
+  position: relative;
+}
+footer .right-controller-partial-bar {
+  height: 4px;
+  width: 25%;
+  background-color: #fff;
+  border-radius: 5px;
+}
+footer .right-controller-partial-bar:hover::before {
+  content: "";
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  bottom: -3px;
+  left: 22%;
+  cursor: pointer;
+}
+footer input {
+  height: 0.25rem;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 100%;
+  margin: 2px;
+  border-radius: 8px;
+  transition: 0.2s ease;
+  background-color: #5e5e5e;
+}
+footer input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /* display: none; */
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  background-color: green;
+}
+footer input[type=range]:hover {
+  background: green;
+}
+footer input[type=range]::-webkit-slider-thumb:hover {
+  background-color: white;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(145, 145, 145);
+  border-radius: 10px;
+}
+
+/* used COLORS */ /* cose da mettere nel search
+
+<!--cards di search-->
+    <div class="row" id="carte-search">
+      <div class="col-5 primo-child">
+        <p>Podcast</p>
+        <picture>
+          <img src="img/podcast.jpeg" alt="card">
+        </picture>
+      </div>
+      <div class="col-5 secondo-child">
+        <p>Create per te</p>
+        <picture>
+          <img src="img/create-per-te.jpeg" alt="card">
+        </picture>
+      </div>
+      <div class="col-5 terzo-child">
+        <p>Nuove uscite</p>
+        <picture>
+          <img src="img/nuove-uscite.jpeg" alt="card">
+        </picture>
+      </div>
+      <div class="col-5 quarto-child">
+        <p>Pop</p>
+        <picture>
+          <img src="img/pop.jpeg" alt="card">
+        </picture>
+      </div>
+      <div class="col-5">
+        <p>Hip Hop</p>
+        <picture>
+          <img src="img/hip-hop.jpeg" alt="card">
+        </picture>
+      </div>
+      <div class="col-5">
+        <p>Dance/ Elettronica</p>
+        <picture>
+          <img src="img/dance-elettronica.jpeg" alt="card">
+        </picture>
+      </div>
+      <div class="col-5">
+        <p>Latina</p>
+        <picture>
+          <img src="img/latina.jpeg" alt="card">
+        </picture>
+      </div>
+      <div class="col-5">
+        <p>Classifiche</p>
+        <picture>
+          <img src="img/classifiche.jpeg" alt="card">
+        </picture>
+      </div>
+      <div class="col-5">
+        <p>Di tendenza</p>
+        <picture>
+          <img src="img/tendenza.jpeg" alt="card">
+        </picture>
+      </div>
+      <div class="col-5">
+        <p>Allenamento</p>
+        <picture>
+          <img src="img/allenamento.jpeg" alt="card">
+        </picture>
+      </div>
+    </div>
+#carte-search {
+        font-size: 20px;
+        font-weight: bold;
+
+        /impostazioni foto card search/
+        picture {
+            position: relative;
+            left: 116%;
+
+            @media screen and (min-width:600px) {
+                left: 107%;
+            }
+
+            @media screen and (min-width:900px) {
+                left: 105%;
+            }
+
+            img {
+                position: absolute;
+                right: 0px;
+                width: 5.3rem;
+                transform: rotate(30deg);
+
+                @media screen and (min-width:600px) {
+                    max-width: 5.5rem;
+                }
+            }
+
+*/
+@media screen and (max-width: 767px) {
+  .mariello {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+  }
+  .mariello img {
+    width: 30%;
+    margin-right: 1rem;
+  }
+  #social img {
+    height: 20%;
+  }
+  #head {
+    padding-bottom: 1rem;
+  }
+  #head img {
+    border-radius: 2rem;
+  }
+  aside, header, footer, #right {
+    display: none;
+  }
+  #jquery #sec-uno {
+    display: none;
+  }
+  #buonasera_blocks {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+  }
+  #buonasera_blocks .blocchetti {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+  #buonasera_blocks .blocchetti img {
+    width: 75%;
+    margin: 1rem;
+  }
+  #top-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.3rem;
+  }
+  #top-mobile i {
+    margin: 0 0.4rem;
+  }
+  #top-mobile #header-mobile-left {
+    display: flex;
+  }
+  #top-mobile #header-mobile-left p {
+    margin: 0;
+  }
+  #hide_divs_one {
+    display: none;
+  }
+  #buonasera-mobile {
+    font-size: 2rem;
+  }
+  #buonasera-mobile #clock {
+    margin: 0 0.5rem;
+  }
+  #buonasera-scritta {
+    font-size: 2rem;
+  }
+  #player {
+    background-color: #191414;
+  }
+  #icone-mobile i, p {
+    z-index: 1;
+    color: white;
+  }
+  #icone-mobile {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}
+@media screen and (min-width: 768px) {
+  #head {
+    padding-bottom: 3rem;
+  }
+  .mariello {
+    width: 13rem;
+    margin-right: 3rem;
+    margin-left: 2rem;
+  }
+  #footer2, #top-mobile, #buonasera-mobile {
+    display: none;
+  }
+  aside {
+    height: 100vh;
+    background-color: black;
+    color: white;
+  }
+  #left {
+    overflow-y: scroll;
+    padding: 1rem;
+    font-size: 0.7rem;
+  }
+  #left i {
+    margin-right: 0.5rem;
+    line-height: 1.3rem;
+  }
+  #buonasera_blocks img {
+    margin-right: 0.7rem;
+    margin-left: 0.4rem;
+  }
+  .blocchetti {
+    margin: 0.5rem auto;
+  }
+  #right #amici {
+    justify-content: flex-end;
+  }
+  #right #attivita {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+  }
+  #right .window {
+    transform: rotate(90deg);
+  }
+  #right .persona {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  #right .persona p, #right .persona i {
+    font-size: 0.6rem;
+  }
+  #right .persona img {
+    border-radius: 50%;
+    width: 70%;
+  }
+  #right #p-ultimo {
+    font-size: 0.5rem;
+  }
+}
+#icone-mobile {
+  display: flex;
+  justify-content: space-around;
+}
+#icone-mobile div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#icone-mobile div i {
+  width: 30%;
+}
+
+.background_simo_css {
+  background-color: rgba(16, 16, 16, 0.953);
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.932);
+}
+
+#bodyAlbum, #bodyArtista {
+  color: white;
+}
+
+.grigi {
+  color: rgb(152, 150, 150);
+}
+
+#artistiHeader {
+  padding: 2rem 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 30%;
+}
+#artistiHeader #headArtisti {
+  min-height: 20rem;
+}
+
+#mainArtisti {
+  display: flex;
+}
+
+.imag_ar {
+  padding: 0%;
+  display: flex;
+  text-align: center;
+}
+.imag_ar img {
+  height: 10%;
+  margin-right: 1rem;
+  margin-top: 0.55rem;
+}
+
+#tre-icone {
+  display: flex;
+  align-items: center;
+}
+#tre-icone i {
+  margin: 0 2.5rem 0 1rem;
+}
+#tre-icone button {
+  margin-right: 4rem;
+}
+
+.secondo-blocco p {
+  line-height: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: black;
+  height: 100%;
+}
+
+.contenitore {
+  display: flex;
+  --bs-gutter-x:0;
+}
+
+main {
+  background: linear-gradient(-20deg, rgba(204, 43, 94, 0.4509803922), rgba(116, 58, 136, 0.4549019608), rgba(43, 88, 118, 0.6235294118), rgba(78, 67, 118, 0.631372549));
+  background-size: 400% 400%;
+  -webkit-animation: gradient 8s ease infinite;
+          animation: gradient 8s ease infinite;
+  overflow-y: scroll;
+  color: white;
+  height: 100vh;
+  width: 100%;
+}
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+main header {
+  padding: 1rem 1rem 0 1rem;
+}
+main header section {
+  display: flex;
+  justify-content: space-between;
+}
+main header button {
+  border-radius: 3.2rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  padding: 0;
+  border: 0;
+  color: white;
+}
+main header button p {
+  margin: 0 1rem;
+  font-size: 0.6rem;
+}
+main header button img {
+  width: 1.8rem;
+  border-radius: 50%;
+}
+main #play {
+  border-radius: 50px;
+  border: 0;
+  background-color: #1DB954;
+  padding: 0.3rem 2rem;
+  margin-right: 0.5rem;
+}
+main #play:hover {
+  background-color: #393939;
+  transition: 0.5s;
+}
+main #salva {
+  padding: 0.3rem 1.7rem;
+  border: 1px solid white;
+  background-color: transparent;
+  border-radius: 50px;
+  color: white;
+}
+main #salva:hover {
+  background-color: #393939;
+  transition: 0.5s;
+}
+main #sec-uno {
+  background: rgb(83, 83, 83);
+  background: linear-gradient(193deg, rgba(83, 83, 83, 0.003) 0%, rgba(0, 0, 0, 0.628) 60%);
+  display: flex;
+  padding: 1rem;
+}
+main #sec-uno img {
+  margin-right: 1rem;
+}
+main .blocco {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main .blocco .blocchi {
+  display: flex;
+  margin-bottom: 1rem;
+}
+main .blocco .blocchi img {
+  width: 10vh;
+  margin-right: 0.25rem;
+}
+
+.blocchi:hover {
+  background-color: #4b4b4b;
+  transition: 1s;
+  cursor: pointer;
+}
+
+/* queste sono le modifiche da mettere in js ciclate e ci sono titolo delle canzoni, degli autori e icona con 3 puntini 
+
+ <div class="d-flex align-items-center justify-content-between mt-3">
+ <div>
+     <h2>${track.title}</h2>
+     <p>${track.author}</p>
+ </div>
+ <div>
+     <i class="bi bi-three-dots-vertical"></i>
+ </div>
+</div> `;
+*/
+.fixed-bottom > div:first-child {
+  background-color: rgb(40, 37, 37);
+}
+
+.fixed-bottom > div:last-child {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#pls {
+  overflow: auto;
+}
+#pls .card {
+  background-color: #171717;
+}
+#pls :hover {
+  background-color: #393939;
+  transition: 1s;
+}
+
+#pls .card {
+  background-color: rgba(23, 23, 23, 0.6823529412);
+}
+#pls :hover {
+  background-color: #393939;
+  transition: 1s;
+  cursor: pointer;
+}
+
+#buonasera_blocks {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+#buonasera_blocks .blocchetti {
+  display: flex;
+  align-items: center;
+  background: rgb(88, 88, 88);
+  background: linear-gradient(214deg, rgba(88, 88, 88, 0.251) 0%, rgba(31, 31, 31, 0.912) 70%);
+}
+#buonasera_blocks :hover {
+  background-color: #4b4b4b;
+  transition: 1s;
+  cursor: pointer;
+}
+
+#footer2 {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  background-color: #191414;
+}
+#footer2 #player-mobile {
+  display: flex;
+  justify-content: space-between;
+}
+
+#main {
+  background-color: #191414;
+  width: 100%;
+  height: 100vh;
+  background-color: #121212;
+  color: white;
+  overflow-y: scroll;
+}
+#main #album-main {
+  overflow-x: hidden;
+}
+#main h1 {
+  margin: 0;
+}
+#main p {
+  margin: 0;
+  color: white;
+  font-weight: bold;
+}
+#main .fedez {
+  margin-bottom: 0.6rem;
+}
+#main .ascolta {
+  margin-bottom: 0.3rem;
+}
+#main button {
+  font-size: 0.8rem;
+  border-radius: 4rem;
+  text-align: center;
+  padding: 0.3rem 1rem;
+  margin-bottom: 1vh;
+}
+#main .play {
+  background-color: #1DB954;
+  border: 0;
+}
+#main .salva {
+  border: 1px solid white;
+  background-color: transparent;
+  margin-left: 0.2rem;
+}
+#main .icona {
+  background-color: rgb(77, 73, 73);
+  border-radius: 50%;
+  text-align: center;
+  margin: 2rem 0;
+}/*# sourceMappingURL=style1.css.map */

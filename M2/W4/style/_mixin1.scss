@@ -1,0 +1,28 @@
+@mixin aside{
+
+    height:100vh;
+    background-color: black;
+    color: white;
+}
+@mixin flex-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+//bottone del play di salmo 
+@mixin play{
+    border-radius: 40%;
+    border: 0;
+    background-color:#1DB954;
+    padding: 0.3rem 1rem;
+    margin-right: 0.5rem;
+}
+//bottone salva di salmo
+
+@mixin salva{
+    padding: 0.3rem 1rem;
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 40%;
+    color: white;
+}

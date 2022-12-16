@@ -1,0 +1,264 @@
+@import "mixin1";
+@import "player";//partial di tutta la barra player
+@import "scroll";
+@import "grandezze";
+@import "stili";
+@import "colori";
+@import "mediaquery";
+@import "iconeMobile";
+@import "album-home";
+
+.secondo-blocco {
+  p{
+    line-height: 1.5rem;
+  }
+}
+a{
+   text-decoration: none;
+   color: white;
+}
+
+body{
+   overflow-x: hidden;
+   background-color: black;
+   height: 100%;
+}
+.contenitore{
+   display: flex;
+   --bs-gutter-x:0;
+}
+main{
+
+   background: linear-gradient(-20deg, #cc2b5e73, #743a8874, #2b58769f,#4e4376a1);
+	 background-size: 400% 400%;
+	 animation: gradient 8s ease infinite;
+
+   //keyframe del background
+   @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  } 
+  //fine keyframe
+   overflow-y: scroll;
+  
+   color: white;
+   height: 100vh;
+   width: 100%;
+   header{
+      padding: 1rem 1rem 0 1rem;
+      section{
+         @include flex-between;
+      }
+      button{
+         border-radius: 3.2rem;
+      @include flex-between;
+      background-color: black;
+      align-items: center;
+      justify-content: center;
+      justify-content: space-between;
+      padding: 0;
+      border: 0;
+      color: white;
+
+
+      p{
+         margin: 0 1rem;
+         font-size: 0.6rem;
+ 
+      }
+      img{
+         width: 1.8rem;
+         border-radius: 50%;
+      }
+      }
+   }
+   #play{
+    border-radius: 50px;          ////////////////////////simo
+    border: 0;
+    background-color:#1DB954;
+    padding: 0.3rem 2rem;
+    margin-right: 0.5rem;
+   }
+   #play:hover{
+    background-color: $hover-color; 
+    transition: 0.5s;
+   }
+   #salva{
+      padding: 0.3rem 1.7rem;
+      border: 1px solid white;    
+      background-color: transparent;
+      border-radius: 50px;        ////////////////////////simo
+      color: white;
+   }
+   #salva:hover{
+   background-color: $hover-color; 
+   transition: 0.5s;
+   }
+   #sec-uno{
+    background: rgb(83,83,83);
+    background: linear-gradient(193deg, rgba(83, 83, 83, 0.003) 0%, rgba(0, 0, 0, 0.628) 60%);
+      display: flex;
+      padding: 1rem;
+      img{
+         margin-right: 1rem;
+      }
+   }
+   //modifiche blocco con le 6 sezioni
+   .blocco{
+      @include flex-between;
+      flex-wrap: wrap;
+      .blocchi{
+       
+      display: flex;
+      margin-bottom: 1rem;
+      img{
+         width: 10vh;
+         margin-right: 0.25rem;
+      }
+   }
+}
+}
+.blocchi:hover{
+     background-color: $hover-color-lighter;
+     transition: 1s;
+     cursor: pointer;
+   }
+
+
+//scrollbar
+
+
+ //file album
+/* queste sono le modifiche da mettere in js ciclate e ci sono titolo delle canzoni, degli autori e icona con 3 puntini 
+
+ <div class="d-flex align-items-center justify-content-between mt-3">
+ <div>
+     <h2>${track.title}</h2>
+     <p>${track.author}</p>
+ </div>
+ <div>
+     <i class="bi bi-three-dots-vertical"></i>
+ </div>
+</div> `;
+*/
+
+ //sass fixed bottom mobile
+
+
+
+
+
+
+
+.fixed-bottom > div:first-child {
+  background-color: rgb(40, 37, 37);
+}
+.fixed-bottom > div:last-child {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+///// CARDS STYLE
+#pls{ 
+
+   overflow: auto;
+   .card{
+     background-color: $big_box-color;
+   }:hover{
+     background-color: $hover-color;
+     transition: 1s;
+   }
+ }
+ #pls{
+   .card{
+    background-color:  #171717ae;
+   }:hover{
+     background-color: $hover-color;
+     transition: 1s;
+     cursor: pointer;
+   }
+ }
+ #buonasera_blocks{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+   .blocchetti{
+    display: flex;
+    align-items: center;
+    background: rgb(88,88,88);
+    background: linear-gradient(214deg, rgba(88, 88, 88, 0.251) 0%, rgba(31, 31, 31, 0.912) 70%);
+   }:hover{
+     background-color: $hover-color-lighter;
+     transition: 1s;
+     cursor: pointer;
+   }
+ }
+#footer2{
+   position: sticky;
+   bottom: 0;
+   background-color: #191414;
+  #player-mobile{
+   display: flex;
+   justify-content: space-between;
+  }
+
+}
+
+
+//modifiche main
+#main {
+
+   background-color: #191414;
+   @include main;
+ 
+   @include sfondo-main;
+ 
+   overflow-y: scroll;
+   
+   #album-main{
+      overflow-x: hidden;
+   }
+ 
+   h1 {
+     margin: 0
+   }
+ 
+   p {
+     margin: 0;
+ 
+     color: white;
+     font-weight: bold;
+   }
+ 
+   .fedez {
+     margin-bottom: 0.6rem;
+   }
+ 
+   .ascolta {
+     margin-bottom: 0.3rem;
+   }
+ 
+   button {
+     @include bottoni;
+   }
+ 
+   .play {
+     @include play;
+   }
+ 
+   .salva {
+     @include salva
+   }
+ 
+   .icona {
+     @include icona;
+   }
+  
+ }
+
+

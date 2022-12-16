@@ -1,0 +1,49 @@
+@mixin sfondo-main{
+    background-color: $bg-color;
+    color: white;
+}
+@mixin image{
+    margin: 0.5rem 1rem;
+    width: 20vh;
+}
+@mixin persona{
+    margin-top: 1rem;
+    display: flex;
+
+    
+}
+@mixin pers{
+    width: 100%;
+    border-radius: 50%;
+}
+@mixin bottoni{
+    font-size: 0.8rem;
+    border-radius: 4rem;
+    text-align: center;
+   padding: 0.3rem 1rem;//prima y e poi x
+   margin-bottom: 1vh;
+   
+}
+
+@mixin play{
+    background-color:#1DB954;
+    border: 0;
+}
+@mixin salva{
+    border: 1px solid white;
+    background-color: transparent;
+    margin-left: 0.2rem;
+}
+
+@mixin icona{
+    background-color: rgb(77, 73, 73);
+    border-radius: 50%;
+    text-align: center;
+    margin: 2rem 0;
+}
+@mixin icone{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+}

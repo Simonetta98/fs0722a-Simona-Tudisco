@@ -1,0 +1,155 @@
+/*indicazione generale*/
+#con-mob{
+    padding: 1.5rem;
+}
+body{
+    height: 100%;
+    background-color: black;
+    color: white;
+}
+#t-mobile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.3rem;
+    i{
+       margin: 0   0.4rem;
+    }
+    #header-mobile-left{
+       display: flex;
+       p{
+          margin: 0;
+       }
+    }  
+
+  }
+
+.cerca{
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+  //footer
+  #footer2{
+    
+    position: sticky;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.8);
+   #player-mobile{
+    display: flex;
+    justify-content: space-between;
+   }
+ 
+ }
+ #icone-mobile{
+    display: flex;
+    justify-content: space-around;
+  
+     div{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      i{
+          width:30%;
+      }
+     }
+  }
+ //footer
+
+#div-search {
+    text-align: center;
+
+
+    /*impostazioni card search*/
+    #carte-search {
+        font-size: 20px;
+        font-weight: bold;
+
+        /*impostazioni foto card search*/
+        picture {
+            position: relative;
+            left: 116%;
+
+            @media screen and (min-width:600px) {
+                left: 107%;
+            }
+
+            @media screen and (min-width:900px) {
+                left: 105%;
+            }
+
+            img {
+                position: absolute;
+                right: 0px;
+                width: 5.3rem;
+                transform: rotate(30deg);
+
+                @media screen and (min-width:600px) {
+                    max-width: 5.5rem;
+                }
+            }
+        }
+
+        /*impostazioni div card*/
+        div {
+            margin: 3%;
+            height: 130px;
+            border-radius: 15px;
+            text-align: left;
+            overflow: hidden;
+
+        }
+/*suddivisione colori dei div card search*/
+        .primo-child {
+            background: rgb(224, 51, 1);
+            background: linear-gradient(0deg, rgba(224, 51, 1, 0.7819502801120448) 12%, rgba(224, 51, 1, 1) 26%);
+        }
+
+        .secondo-child {
+            background: rgb(30, 50, 100);
+            background: linear-gradient(0deg, rgba(30, 50, 100, 0.7819502801120448) 12%, rgba(30, 50, 100, 1) 26%);
+        }
+
+        .terzo-child {
+            background: rgb(233, 16, 92);
+            background: linear-gradient(0deg, rgba(233, 16, 92, 0.7819502801120448) 12%, rgba(233, 16, 92, 1) 26%);
+        }
+
+        .quarto-child {
+            background: rgb(21, 138, 8);
+            background: linear-gradient(0deg, rgba(21, 138, 8, 0.7819502801120448) 12%, rgba(21, 138, 8, 1) 26%);
+        }
+
+        :nth-child(5) {
+            background: rgb(188, 88, 0);
+            background: linear-gradient(0deg, rgba(188, 88, 0, 0.7819502801120448) 12%, rgba(188, 88, 0, 1) 26%);
+        }
+
+        :nth-child(6) {
+            background: rgb(216, 64, 0);
+            background: linear-gradient(0deg, rgba(216, 64, 0, 0.7819502801120448) 12%, rgba(216, 64, 0, 1) 26%);
+        }
+
+        :nth-child(7) {
+            background: rgb(222, 16, 139);
+            background: linear-gradient(0deg, rgba(222, 16, 139, 0.7819502801120448) 12%, rgba(222, 16, 139, 1) 26%);
+        }
+
+        :nth-child(8) {
+            background: rgb(132, 98, 159);
+            background: linear-gradient(0deg, rgba(132, 98, 159, 0.7819502801120448) 12%, rgba(132, 98, 159, 1) 26%);
+        }
+
+        :nth-child(9) {
+            background: rgb(244, 234, 30);
+            background: linear-gradient(0deg, rgba(244, 234, 30, 0.7819502801120448) 12%, rgba(244, 234, 30, 1) 26%);
+        }
+
+        :nth-child(10) {
+            background: rgb(93, 180, 224);
+            background: linear-gradient(0deg, rgba(93, 180, 224, 0.7819502801120448) 12%, rgba(93, 180, 224, 1) 26%);
+        }
+
+
+    }
+}
