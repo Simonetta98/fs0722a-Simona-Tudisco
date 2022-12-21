@@ -23,7 +23,7 @@ abstract class Work_er implements Which{
     }
     describe() {
         return 'I am an ' + this.type + ', and I have a reddit of ' + this.reddit + '$ a year. ' + 'My taxed reddit is the ' + this.codredd + '% of ' + this.reddit + ', so ' + this.getTaxedReddit() + '. ' + 'The taxes I have to pay are ' + this.tasseinps + '% Inps and ' + this.tasseirpef + '% Irpef, ' + 
-       'so ' + this.getTasseInps() + '$ + ' + this.getTasseIrpef() + '$ = ' + this.getTotTax() + '.'
+       'so ' + this.getTasseInps() + '$ + ' + this.getTasseIrpef() + '$ = ' + this.getTotTax() + '. ' + 'What remains to me is a total of ' + this.getRedditoAnnuoNetto() + '$ .'
     }
 
 
