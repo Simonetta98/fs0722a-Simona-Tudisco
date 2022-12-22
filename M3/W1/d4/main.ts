@@ -59,8 +59,7 @@
    let obj = new MyObj(decoded[i].id, decoded[i].codprod, decoded[i].collezione, decoded[i].capo, decoded[i].modello, decoded[i].quantita, decoded[i].colore, decoded[i].prezzoivaesclusa, decoded[i].prezzoivainclusa, decoded[i].disponibile, decoded[i].saldo, decoded[i].img, decoded[i].imgHover);
    console.log(obj)
    //console.log(obj.getsaldocapo())
-var m = Array.from(decoded)
-console.log(m)
+
 //DOM
    let container = (<HTMLDivElement>document.getElementById('container'));
     container.innerHTML += ` <div class="card mb-4 me-4 boh" style="width: 18rem;">
@@ -84,7 +83,7 @@ console.log(m)
        Prezzo: <span class="text-decoration-line-through">${Math.round(obj.prezzoivainclusa)} €</span> <span class="ms-4 fs-4 fw-semibold ">${obj.getacquistocapo()} €</span>
        </p>
        <div class="container text-center">
-      <a id="${obj.capo}   , ${obj.collezione} ${obj.getacquistocapo()}" href="#" class="btn  shadow bg-body rounded ">Mettilo in busta <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag mb-1 ms-1" viewBox="0 0 16 16">
+      <a id="${obj.capo}   , ${obj.collezione} ${obj.getacquistocapo()}" href="#b" class="btn  shadow bg-body rounded ">Mettilo in busta <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag mb-1 ms-1" viewBox="0 0 16 16">
       <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
     </svg></a>
     </div>
@@ -99,13 +98,15 @@ el.addEventListener('click', function() {
    let container2 = (<HTMLDivElement>document.getElementById('cart'));
 
    container2.innerHTML += ` 
-   <div class="card mb-4 me-4 boh" style="width: 18rem;">
+   <div id="b" class="card mb-4 me-4" style="width: 18rem;">
    <div class="card-body">
-   <p class="d-none codprod">${el.id}</p> 
-     <h5 id="nome" class="card-title fw-semibold">${el.id.slice(0, 8)} <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bag-heart ms-2 mb-1" viewBox="0 0 16 16">
+   <a class="btn rounded mb-4 p-1 delete"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+   <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+ </svg></a>
+     <h5 id="nome" class="card-title fw-semibold">${el.id.slice(0, 8).toUpperCase()} <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bag-heart ms-2 mb-1" viewBox="0 0 16 16">
      <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5Zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0ZM14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
    </svg></h5> 
-     <p class="card-text">Collezione: <span>${el.id.slice(0, -2)}</span>.
+     <p class="card-text"><span>${el.id.slice(0, -2)}</span>.
      </p>
       <hr>
       <p class="text-center">

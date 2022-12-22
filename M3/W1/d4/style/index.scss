@@ -24,4 +24,10 @@ body{
     #bag, .bi-house, .bi-bag-heart {
         color: red;
     }
+    .bi{
+        transition: transform .7s ease-in-out;
+    }
+    .bi-x:hover{
+        transform: rotate(360deg);
+    }
 }
