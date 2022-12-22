@@ -1,0 +1,19 @@
+body {
+  background-color: #faf9f7;
+}
+body h1 {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 50px;
+}
+body h5, body p, body a {
+  font-family: "Roboto", sans-serif;
+}
+body .btn {
+  background-color: #efefef;
+  border: none;
+  color: black;
+}
+body .card {
+  background-color: #e8e5e0;
+  border: none;
+}/*# sourceMappingURL=index.css.map */
