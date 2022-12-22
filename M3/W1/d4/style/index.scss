@@ -12,6 +12,10 @@ body{
         background-color: $bg-button;
         border: none;
         color: black;
+        transition: transform .2s; /* Animation */
+    }
+    .btn:hover{
+        transform: scale(1.1);
     }
     .card{
         background-color: $bg-card;

@@ -24,9 +24,10 @@
     prezzoivainclusa: number;
     disponibile: string;
     saldo: number;
-    img: string
+    img: string;
+    imgHover: string
 
-    constructor(id: string, codprod: number, collezione: string, capo: string, modello: number, quantita: number, colore:string, prezzoivaesclusa: number, prezzoivainclusa: number, disponibile: string, saldo: number, img: string){
+    constructor(id: string, codprod: number, collezione: string, capo: string, modello: number, quantita: number, colore:string, prezzoivaesclusa: number, prezzoivainclusa: number, disponibile: string, saldo: number, img: string, imgHover: string){
         this.id = id;
         this.codprod = codprod;
         this.collezione = collezione;
@@ -38,7 +39,8 @@
         this.prezzoivainclusa = prezzoivainclusa; //prezzo utilizzato
         this.disponibile = disponibile;
         this.saldo = saldo;                      //sconto applicato in %
-        this.img = img
+        this.img = img;
+        this.imgHover = imgHover
     }
 
 //Metodi ogg.
@@ -54,7 +56,7 @@
 
 //Nuovi ogg.
    for (var i in decoded){
-   let obj = new MyObj(decoded[i].id, decoded[i].codprod, decoded[i].collezione, decoded[i].capo, decoded[i].modello, decoded[i].quantita, decoded[i].colore, decoded[i].prezzoivaesclusa, decoded[i].prezzoivainclusa, decoded[i].disponibile, decoded[i].saldo, decoded[i].img);
+   let obj = new MyObj(decoded[i].id, decoded[i].codprod, decoded[i].collezione, decoded[i].capo, decoded[i].modello, decoded[i].quantita, decoded[i].colore, decoded[i].prezzoivaesclusa, decoded[i].prezzoivainclusa, decoded[i].disponibile, decoded[i].saldo, decoded[i].img, decoded[i].imgHover);
    console.log(obj)
    //console.log(obj.getsaldocapo())
 var m = Array.from(decoded)
@@ -62,7 +64,7 @@ console.log(m)
 //DOM
    let container = (<HTMLDivElement>document.getElementById('container'));
     container.innerHTML += ` <div class="card mb-4 me-4 boh" style="width: 18rem;">
-    <img src="${obj.img}" class="card-img-top mt-2 img-thumbnail rounded" alt="...">
+    <img onmouseover="this.src='${obj.imgHover}'" onmouseout="this.src='${obj.img}'" id="change" src="${obj.img}" class="card-img-top mt-2 img-thumbnail rounded" alt="...">
     <div class="card-body">
     <p class="d-none codprod">${obj.codprod}</p> 
       <h5 id="nome" class="card-title fw-semibold">${obj.capo.charAt(0).toUpperCase() + obj.capo.slice(1)}</h5> 
@@ -89,7 +91,6 @@ console.log(m)
     </div>
   </div>`
 
-
 //Cart
 var buttons = Array.from(document.querySelectorAll('.btn'))
 console.log(buttons)
@@ -99,7 +100,8 @@ el.addEventListener('click', function() {
   
    let container2 = (<HTMLDivElement>document.getElementById('cart'));
 
-   container2.innerHTML += ` <div class="card mb-4 me-4 boh" style="width: 18rem;">
+   container2.innerHTML += ` 
+   <div class="card mb-4 me-4 boh" style="width: 18rem;">
    <div class="card-body">
    <p class="d-none codprod">${el.id}</p> 
      <h5 id="nome" class="card-title fw-semibold">${el.id}</h5> 

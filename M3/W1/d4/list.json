@@ -11,7 +11,8 @@
       "prezzoivainclusa":22.57,
       "disponibile":"negozio",
       "saldo":45,
-      "img": "imgs/cardig.jpeg"
+      "img": "imgs/cardig.jpeg",
+      "imgHover" : "imgs/cardiHover.jpeg"
      
     },
 
@@ -27,7 +28,8 @@
         "prezzoivainclusa":6.71,
         "disponibile":"magazzino",
         "saldo":30,
-        "img": "imgs/t_shirt.jpeg"
+        "img": "imgs/t_shirt.jpeg",
+        "imgHover" : "imgs/tshirtHover.jpeg"
        
       },
 
@@ -43,7 +45,8 @@
         "prezzoivainclusa":21.35,
         "disponibile":"negozio",
         "saldo":50,
-        "img": "imgs/felp.jpeg"
+        "img": "imgs/felp.jpeg",
+        "imgHover" : "imgs/felpaHover.jpeg"
        
       },
 
@@ -59,7 +62,8 @@
         "prezzoivainclusa":24.40,
         "disponibile":"negozio",
         "saldo":50,
-        "img": "imgs/maglione.jpeg"
+        "img": "imgs/maglione.jpeg",
+        "imgHover" : "imgs/maglioneHover.jpeg"
        
       },
 
@@ -75,7 +79,8 @@
         "prezzoivainclusa":13.42,
         "disponibile":"magazzino",
         "saldo":60,
-        "img": "imgs/maglia blu.jpeg"
+        "img": "imgs/maglia blu.jpeg",
+        "imgHover" : "imgs/magliaHover.jpeg"
        
       }
     

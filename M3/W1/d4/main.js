@@ -15,7 +15,7 @@ function fetchPlaces() {
         let decoded = yield response.json();
         console.log(decoded);
         class MyObj {
-            constructor(id, codprod, collezione, capo, modello, quantita, colore, prezzoivaesclusa, prezzoivainclusa, disponibile, saldo, img) {
+            constructor(id, codprod, collezione, capo, modello, quantita, colore, prezzoivaesclusa, prezzoivainclusa, disponibile, saldo, img, imgHover) {
                 this.id = id;
                 this.codprod = codprod;
                 this.collezione = collezione;
@@ -28,6 +28,7 @@ function fetchPlaces() {
                 this.disponibile = disponibile;
                 this.saldo = saldo; //sconto applicato in %
                 this.img = img;
+                this.imgHover = imgHover;
             }
             //Metodi ogg.
             getsaldocapo() {
@@ -39,7 +40,7 @@ function fetchPlaces() {
         }
         //Nuovi ogg.
         for (var i in decoded) {
-            let obj = new MyObj(decoded[i].id, decoded[i].codprod, decoded[i].collezione, decoded[i].capo, decoded[i].modello, decoded[i].quantita, decoded[i].colore, decoded[i].prezzoivaesclusa, decoded[i].prezzoivainclusa, decoded[i].disponibile, decoded[i].saldo, decoded[i].img);
+            let obj = new MyObj(decoded[i].id, decoded[i].codprod, decoded[i].collezione, decoded[i].capo, decoded[i].modello, decoded[i].quantita, decoded[i].colore, decoded[i].prezzoivaesclusa, decoded[i].prezzoivainclusa, decoded[i].disponibile, decoded[i].saldo, decoded[i].img, decoded[i].imgHover);
             console.log(obj);
             //console.log(obj.getsaldocapo())
             var m = Array.from(decoded);
@@ -47,7 +48,7 @@ function fetchPlaces() {
             //DOM
             let container = document.getElementById('container');
             container.innerHTML += ` <div class="card mb-4 me-4 boh" style="width: 18rem;">
-    <img src="${obj.img}" class="card-img-top mt-2 img-thumbnail rounded" alt="...">
+    <img onmouseover="this.src='${obj.imgHover}'" onmouseout="this.src='${obj.img}'" id="change" src="${obj.img}" class="card-img-top mt-2 img-thumbnail rounded" alt="...">
     <div class="card-body">
     <p class="d-none codprod">${obj.codprod}</p> 
       <h5 id="nome" class="card-title fw-semibold">${obj.capo.charAt(0).toUpperCase() + obj.capo.slice(1)}</h5> 
@@ -80,7 +81,8 @@ function fetchPlaces() {
                 el.addEventListener('click', function () {
                     sessionStorage.setItem('id', el.id);
                     let container2 = document.getElementById('cart');
-                    container2.innerHTML += ` <div class="card mb-4 me-4 boh" style="width: 18rem;">
+                    container2.innerHTML += ` 
+   <div class="card mb-4 me-4 boh" style="width: 18rem;">
    <div class="card-body">
    <p class="d-none codprod">${el.id}</p> 
      <h5 id="nome" class="card-title fw-semibold">${el.id}</h5> 
