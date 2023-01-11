@@ -1,0 +1,37 @@
+<nav class="navbar bg-dark">
+  <div class="container-fluid row">
+    <div class="col-3">
+      <img src="https://picsum.photos/id/1033/50/50" alt="img random" />
+    </div>
+      <ul class="d-flex col-9">
+        <li class="nav-item col-3">
+          <a
+            class="nav-link active text-light"
+            aria-current="page"
+            [routerLink]="['home']"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item col-3">
+          <a
+            class="nav-link text-light"
+            [routerLink]="['/activePosts']"
+            routerLinkActive="active"
+            >Post attivi</a
+          >
+        </li>
+        <li class="nav-item col-3">
+          <a
+            class="nav-link text-light"
+            [routerLink]="['/inactivePosts']"
+            routerLinkActive="active"
+            >Post non attivi</a
+          >
+        </li>
+      </ul>
+    </div>
+</nav>
+
+<router-outlet></router-outlet>
