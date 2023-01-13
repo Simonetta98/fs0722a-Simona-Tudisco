@@ -27,7 +27,7 @@
 
   <ul *ngFor="let item of listTo;" class="list-group my-2 text-center">
     <div *ngIf="item.completed == false">
-      <p>{{ item.id }}</p>
+      <p class="fw-lighter text-secondary">  ~  {{ item.id }}  ~ </p>
       <li class="list-group-item rounded d-flex justify-content-center align-items-center">
         {{ item.title }}
         <button class="btn btn-success ms-auto" (click)="completeTask(item.id)">
