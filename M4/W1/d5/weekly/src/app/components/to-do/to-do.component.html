@@ -1,0 +1,40 @@
+<div class="container-fluid text-center p-0">
+ <div class="container-fluid p-3 justify-content-center align-items-center bg-primary-subtle">
+  <div class="container d-flex justify-content-center align-items-center">
+  <img class="me-2" src="../../../assets/5847ea22cef1014c0b5e4833.png" alt="ang_logo" width="40px">
+  <h3 class="m-0">Angular</h3>
+  </div>
+  <h1 class="my-2 display-1">Todo List</h1>
+</div>
+<div class="container border mt-2 blockNotes bg-light rounded-4">
+<div class="d-flex justify-content-center">
+  <div class="container d-flex justify-content-center m-2">
+  <input #takeInput class="rounded" type="text" #task placeholder=" Write New Task.." />
+  <button
+    type="button"
+    (click)="addTaskTodo(task.value)"
+    class="btn d-flex align-items-center btn-outline-dark ms-2">
+    <p class="m-0 pe-1">ADD</p> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-plus" viewBox="0 0 16 16">
+      <path d="M8 6.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V11a.5.5 0 0 1-1 0V9.5H6a.5.5 0 0 1 0-1h1.5V7a.5.5 0 0 1 .5-.5z"/>
+      <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z"/>
+    </svg>
+  </button>
+</div>
+</div>
+  <div *ngIf="listTo.length <= 0" class="my-2">
+    <h2>There is no task yet.</h2>
+  </div>
+
+  <ul *ngFor="let item of listTo;" class="list-group my-2 text-center">
+    <div *ngIf="item.completed == false">
+      <p>{{ item.id }}</p>
+      <li class="list-group-item rounded d-flex justify-content-center align-items-center">
+        {{ item.title }}
+        <button class="btn btn-success ms-auto" (click)="completeTask(item.id)">
+          <i class="bi bi-check2-all"></i>
+        </button>
+      </li>
+    </div>
+  </ul>
+</div>
+</div>
