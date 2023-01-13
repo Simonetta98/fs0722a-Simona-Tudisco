@@ -25,9 +25,9 @@
     <h2>There is no task yet.</h2>
   </div>
 
-  <ul *ngFor="let item of listTo;" class="list-group my-2 text-center">
+  <ul *ngFor="let item of listTo; let i = index" class="list-group my-2 text-center">
     <div *ngIf="item.completed == false">
-      <p class="fw-lighter text-secondary">  ~  {{ item.id }}  ~ </p>
+      <p class="fw-lighter text-secondary">  ~  {{ i }}  ~ </p>
       <li class="list-group-item rounded d-flex justify-content-center align-items-center">
         {{ item.title }}
         <button class="btn btn-success ms-auto" (click)="completeTask(item.id)">
