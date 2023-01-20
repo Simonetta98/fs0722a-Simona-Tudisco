@@ -1,0 +1,24 @@
+<div class="m-4">
+<app-counter></app-counter>
+</div>
+<div class="card-group">
+<div *ngFor="let pic of pics">
+
+  <div class="card m-3" style="width: 18rem;">
+    <img src="{{pic.thumbnailUrl}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title"> Foto n°{{pic.id}} </h5>
+      <p class="card-text"> {{ pic.title}} </p>
+      <div>
+      <a href="#" class="btn btn-primary me-2">Mi piace</a>
+      </div>
+      <ng-template #unliked>
+      <a href="#" class="btn btn-success me-2">Non mi piace</a>
+      </ng-template>
+
+      <a href="#" class="btn btn-danger" (click)="eliminaPics(pic.id)">Elimina</a>
+    </div>
+   </div>
+ </div>
+</div>
+

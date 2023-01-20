@@ -12,7 +12,7 @@ export class HeroFormComponent implements OnInit {
 
 
   powers = ['Really Smart', 'Super Flexible', 'Super Hot', 'Weather Changer'];
-  planets = ['Mars', 'Venus', 'Moon', 'Jupiter'];
+  planets = ['Mars', 'Venus', 'Mattia', 'Jupiter'];
 
   model = new Hero(18, 'Dr. IQ', this.powers[0], 'Chuck.27', this.planets[0], 'Cheese', 'Titanium');
 
