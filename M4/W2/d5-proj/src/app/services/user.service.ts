@@ -6,7 +6,7 @@ import { User } from '../interfaces/user';
 })
 export class UserService {
 
-  url = "http://localhost:3000/users"
+  url = "http://localhost:4201/users"
   users: User[] = []
 
   getUserById(id: any) {

@@ -22,7 +22,7 @@ export class AuthService {
 
   logged = false
 
-  url = "http://localhost:3000/"
+  url = "http://localhost:4201/"
 
   constructor(private http:HttpClient, private router: Router) { }
 
