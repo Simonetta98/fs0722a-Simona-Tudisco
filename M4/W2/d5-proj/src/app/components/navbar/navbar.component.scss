@@ -1,0 +1,29 @@
+@import 'colors';
+@import 'fonts';
+
+body{
+  font-family: $base;
+}
+#videoTitle{
+  font-family: $title;
+}
+
+nav{
+    background-color: $bg-nav;
+#navbar_texts{
+    font-size: 12px;
+    a{
+      color: white;
+    }:hover{
+        color: $hover-color;
+        transition: 0.5s;
+    }
+  }
+}
+#dropdown_navbar{
+    font-size: 15px;
+    background-color: $dropmenu-color;
+}
+.btn{
+  font-size: 14px;
+}

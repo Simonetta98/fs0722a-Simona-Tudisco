@@ -1,0 +1,30 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+#videoTitle {
+  font-family: "Spectral", serif;
+}
+
+nav {
+  background-color: #0b0b0b;
+}
+nav #navbar_texts {
+  font-size: 12px;
+}
+nav #navbar_texts a {
+  color: white;
+}
+nav #navbar_texts :hover {
+  color: rgba(203, 203, 203, 0.7725490196);
+  transition: 0.5s;
+}
+
+#dropdown_navbar {
+  font-size: 15px;
+  background-color: rgba(20, 20, 20, 0.9019607843);
+}
+
+.btn {
+  font-size: 14px;
+}/*# sourceMappingURL=navbar.component.css.map */

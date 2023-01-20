@@ -1,0 +1,12 @@
+.card {
+  background-color: rgba(0, 0, 0, 0.424);
+  color: white;
+}
+
+.like {
+  color: pink;
+}
+
+.unlike {
+  color: white;
+}/*# sourceMappingURL=dashboard.component.css.map */
