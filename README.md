@@ -8,7 +8,7 @@ Bootstrap
 
 🔗 INFO <br/>
 This repository refers to my Epicode's Bootcamp journey, where I had the opportunity to deepen my programming knowledge, learning and exercising everyday,
-creating solo projects and group projects.
+creating solo projects and group projects. <br/>
 🔗 INSIDE <br/>
 Every day for every week there are exercises regarding a specific argument.
 At the end of every week folder there's usually a bigger project that condense all the skills learned during that week.
