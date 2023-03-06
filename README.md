@@ -1,9 +1,9 @@
 # About this Repository...
-🗂 Folder structure:
+# 🗂 Folder structure:
 Month --> Week --> Day
-🗣 Used languages:
+# 🗣 Used languages:
 HTML, CSS, SASS, JAVASCRIPT, TYPESCRIPT, ANGULAR
-📓 Frameworks:
+# 📓 Frameworks:
 Bootstrap
 
 🔗 INFO
