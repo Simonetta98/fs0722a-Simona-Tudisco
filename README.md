@@ -5,6 +5,7 @@ Month --> Week --> Day
 HTML, CSS, SASS, JAVASCRIPT, TYPESCRIPT, ANGULAR
 # 📓 Frameworks:
 Bootstrap
+#
 
 🔗 INFO <br/>
 This repository refers to my Epicode's Bootcamp journey, where I had the opportunity to deepen my programming knowledge, learning and exercising everyday,
