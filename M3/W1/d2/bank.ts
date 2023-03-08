@@ -85,6 +85,7 @@ console.log(mario)
 
 //DOM
 
+//MOTHER
 var button1 = (<HTMLButtonElement>document.getElementById('buttonMother1'));
 var p1 = (<HTMLParagraphElement>document.getElementById('pMother1'));
 
@@ -102,8 +103,15 @@ p1.textContent = `${setMother.balance}`
 
 }
 
-button2.addEventListener('click', deposit)
+/*button2.addEventListener('click', deposit)
 function deposit() {
- //
+    var mother:any = (<HTMLInputElement>document.getElementById('mother')).value;
+    var dep:any = (<HTMLInputElement>document.getElementById('dep')).value;
+//console.log(mother)
+var setMother = new MotherAccount(mother)
+//console.log(setMother)
+p2.textContent = `${setMother.oneDeposit(dep)}`
+}*/
 
-}
+
+//SON

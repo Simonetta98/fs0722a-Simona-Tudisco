@@ -4,9 +4,9 @@ var beCasual = Math.floor(Math.random() * 100) + 1;
 console.log(beCasual);
 var scoreOne = 0;
 var scoreTwo = 0;
+//typecasting
 var score1 = document.getElementById('scoreone');
 var score2 = document.getElementById('scoretwo');
-//
 var content = document.getElementById('winOne');
 var content2 = document.getElementById('winTwo');
 var button = document.getElementById('buttonGuess');

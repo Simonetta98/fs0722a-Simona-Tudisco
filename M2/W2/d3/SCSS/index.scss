@@ -1,14 +1,14 @@
 @import 'variables';
 @import 'buttons';
+
 body{
     background-image: url('../img/Aesthetic-wallpaper-building-architecture-form.jpeg') ;
     background-size: cover;
-   
 }
 
 a{
     text-decoration: $remove;
-    color: black;
+    color: $dark;
     &:hover{
         color: $b-color2;
         transition: 0.5s;
@@ -30,7 +30,6 @@ header{
     }
     img{
         width: $full-width; 
-       
     }
     .space{
         width: 90px;

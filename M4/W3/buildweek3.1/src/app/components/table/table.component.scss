@@ -1,0 +1,15 @@
+a,
+button {
+  transition: all 0.5s;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.spinner-grow {
+  @for $i from 2 through 6 {
+    &:nth-child(#{$i}) {
+      animation-delay: $i + 100ms;
+    }
+  }
+}

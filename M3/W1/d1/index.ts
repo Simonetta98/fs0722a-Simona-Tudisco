@@ -5,9 +5,10 @@ console.log(beCasual)
 
 var scoreOne:number = 0;
 var scoreTwo:number = 0;
+
+//typecasting
 var score1 = (<HTMLDivElement>document.getElementById('scoreone'));
 var score2 = (<HTMLDivElement>document.getElementById('scoretwo'));
-//
 
 var content = (<HTMLDivElement>document.getElementById('winOne'));
 var content2 = (<HTMLDivElement>document.getElementById('winTwo'));

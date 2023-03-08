@@ -66,6 +66,7 @@ console.log(maria.addInterest(10));
 let mario = new SonAccount(90);
 console.log(mario);
 //DOM
+//MOTHER
 var button1 = document.getElementById('buttonMother1');
 var p1 = document.getElementById('pMother1');
 var button2 = document.getElementById('buttonMother2');
@@ -79,7 +80,13 @@ function balance() {
     //console.log(setMother)
     p1.textContent = `${setMother.balance}`;
 }
-button2.addEventListener('click', deposit);
+/*button2.addEventListener('click', deposit)
 function deposit() {
-    //
-}
+    var mother:any = (<HTMLInputElement>document.getElementById('mother')).value;
+    var dep:any = (<HTMLInputElement>document.getElementById('dep')).value;
+//console.log(mother)
+var setMother = new MotherAccount(mother)
+//console.log(setMother)
+p2.textContent = `${setMother.oneDeposit(dep)}`
+}*/
+//SON

@@ -22,10 +22,10 @@
           <input id="surname"  type="text" class="form-control" placeholder="write your surname">
         </div>
         <div class="mb-3">
-            <label class="form-label">Year</label>
+            <label class="form-label">Birthday</label>
             <input id="year" type="date" class="form-control">
           </div>
-        <input type="submit" name="submit" value="Submit" id="submit"/>
+        <input class="bg-info border-0 rounded col-2" type="submit" name="submit" value="Submit" id="submit"/>
       </form>
     </div>
     <div class="col-6">
@@ -34,7 +34,7 @@
           <tr>
             <th scope="col">Name</th>
             <th scope="col">Surname</th>
-            <th scope="col">Year</th>
+            <th scope="col">Years</th>
 
           </tr>
         </thead>
@@ -43,13 +43,13 @@
             
             <td>Mark</td>
             <td>Otto</td>
-            <td>@mdo</td>
+            <td>34</td>
           </tr>
           <tr>
 
             <td>Jacob</td>
             <td>Thornton</td>
-            <td>@fat</td>
+            <td>21</td>
           </tr>
        
         </tbody>
@@ -78,11 +78,11 @@ function getId(){
     var newPerson = new Person (name1, surname1, year1);
     
     console.log(newPerson);
-    newPerson.write().bind(newPerson);
+    newPerson.write().bind(newPerson); //con bind() il this si riferisce alla var newPerson riga 78
 }
 document.getElementById('submit').addEventListener('click', putInTable);
 function putInTable(e){
-    e.preventDefault();
+    e.preventDefault();  //evito il refresh automatico della pagina 
     getId();
 }
 
