@@ -2,9 +2,9 @@
 # 🗂 Folder structure:
 Month --> Week --> Day
 # 🗣 Used languages:
-HTML, CSS, SASS, JAVASCRIPT, TYPESCRIPT, ANGULAR
+HTML, CSS, SASS, JAVASCRIPT, TYPESCRIPT
 # 📓 Frameworks:
-Bootstrap
+ANGULAR, Bootstrap
 #
 
 🔗 INFO <br/>
